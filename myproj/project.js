@@ -16,54 +16,55 @@ function generateID() {
 
 var id = generateID();
 
-function Maker(price, name, category, images ) {
+function Maker(price, name, category, images, date) {
     var data = {
-        price:price,
-        name:name,
-        category:category,
-        images:images,
+        price: price,
+        name: name,
+        category: category,
+        images: images,
+        date: date,
         id: id(),
     };
     this.list.push(data);
     return data;
 }
 
-    var multiShop = myShop("e-commerce");
+var multiShop = myShop("e-commerce");
 
 
-    multiShop.Maker(1500, "Iphone 15 pro max", "Phones",
-        "https://i.pinimg.com/564x/ca/ad/65/caad6510e0e3b3bf7892320fe46c0dd2.jpg")
+multiShop.Maker(1500, "Iphone 15 pro max", "Phones",
+    "https://i.pinimg.com/236x/49/66/67/496667a4a4540052c4c837efc9f5cc6e.jpg", "available from: 15/01/2024")
 
-    multiShop.Maker(650, "comfy chain", "Gaming",
-        "https://i.pinimg.com/564x/20/f0/c2/20f0c2ecd3d69d5a03c762d1f148363d.jpg");
+multiShop.Maker(650, "Chair", "Gaming",
+    "https://i.pinimg.com/564x/20/f0/c2/20f0c2ecd3d69d5a03c762d1f148363d.jpg", "available from: 15/01/2024")
 
-    multiShop.Maker(450, "z flip", "Phones",
-        "https://i.pinimg.com/564x/fd/58/57/fd585735bdbc42e9fb85180a5262b769.jpg");
-    multiShop.Maker(1000, "screen", "Gaming",
-        "https://i.pinimg.com/564x/bc/72/63/bc7263014a88c84f71abc5a5ff6133cd.jpg");
-    multiShop.Maker(2500, "laptop", "aming", "https://i.pinimg.com/564x/44/0a/4a/440a4aef86eaecb7aa0dd0e1241f7076.jpg")
-    multiShop.Maker(1550, "item6", "Accessories",
-        "https://i.pinimg.com/236x/64/f4/b3/64f4b3d8f28911bb122af31232254d6f.jpg");
-    multiShop.Maker(1550, "item7", "Gaming",
-        "https://i.pinimg.com/236x/e6/f7/f5/e6f7f58da7d5ec6205633fd38a5ce7ff.jpg");
-    multiShop.Maker(2500, "item8", "Accessories", "https://i.pinimg.com/564x/dc/ff/d4/dcffd47e29f2bb4a160d7a1ebcbb4beb.jpg");
-    multiShop.Maker(700, "item9", "Accessories", "https://i.pinimg.com/564x/5a/6c/03/5a6c03d8ca27cafa8e4411b82682d6ae.jpg");
-    multiShop.Maker(500, "item10", "Accessories", "https://i.pinimg.com/originals/70/fe/9e/70fe9ee6c764c0b69ab33cfcb2f4f1bf.jpg");
-    multiShop.Maker(340, "item11", "Phones", "https://i.pinimg.com/564x/40/32/b5/4032b56e287c45ccfb98e1ef5b6e44d2.jpg");
-    multiShop.Maker(1500, "item12", "Gaming", "https://i.pinimg.com/564x/81/01/a2/8101a2389f8d41beb823167276844686.jpg");
-    multiShop.Maker(1400, "item13", "Gaming", "https://i.pinimg.com/564x/5f/3b/e5/5f3be560a5034f3f823fbed8f48e773d.jpg");
-    multiShop.Maker(1000, "item14", "Gaming", "https://i.pinimg.com/564x/40/8d/46/408d465cb45ff86988a247b6c1da35c5.jpg");
-    multiShop.Maker(500, "item15", "Phones", "https://i.pinimg.com/564x/b1/62/a9/b162a927ad546aa0908fd84f5a2624e3.jpg");
-    multiShop.Maker(1500, "item16", "Accessories", "https://i.pinimg.com/564x/e8/85/fb/e885fb7b8ccf003bd2e4be1ac2a77caf.jpg");
-    multiShop.Maker(450, "item17", "Gaming", "https://i.pinimg.com/564x/73/a9/00/73a900a3dc9a695205b0d546d9148cb1.jpg");
-    multiShop.Maker(500, "item18", "Phones", "https://i.pinimg.com/564x/3e/0f/3a/3e0f3af713ee3a957bb2cb70376f0751.jpg");
-    multiShop.Maker(1000, "item19", "Gaming", "https://i.pinimg.com/564x/15/33/46/1533469fb9e0e7b6ded63160480abad5.jpg");
-    multiShop.Maker(800, "item20", "Gaming", "https://i.pinimg.com/564x/73/9b/35/739b353043bba7e94a10a567410b7572.jpg");
+multiShop.Maker(450, "z flip", "Phones",
+    "https://i.pinimg.com/236x/38/c1/7b/38c17b657fc52cd82c67da0dc15dfa5c.jpg", "available from: 15/01/2024")
+multiShop.Maker(1000, "laptop", "Gaming",
+    "https://i.pinimg.com/236x/b4/01/aa/b401aa485f015d0e62242f52f805ee3c.jpg", "available from: 15/01/2024")
+multiShop.Maker(500, "huawei", "Phones", "https://i.pinimg.com/236x/d6/f2/0e/d6f20e4c44a0154b20ede92b3ed6c532.jpg", "available from: 12/10/2023")
+multiShop.Maker(1550, "mouse", "Accessories",
+    "https://i.pinimg.com/564x/2b/04/df/2b04df784724301d2c8a633237d9a67d.jpg", "available from: 15/01/2024")
+multiShop.Maker(1550, "ps 5", "Gaming",
+    "https://i.pinimg.com/736x/cd/43/67/cd43672a63f6356bd4199d4ae6d1d480.jpg", "available from: 15/01/2024")
+multiShop.Maker(2500, "headphone", "Accessories", "https://i.pinimg.com/236x/65/69/8a/65698a7398431bfbdc9e9189ad28ac90.jpg", "available from: 15/01/2024")
+multiShop.Maker(700, "mouce ", "Accessories", "https://i.pinimg.com/236x/5d/37/fd/5d37fd0444281beaa4287a774da6fa96.jpg", "available from: 15/01/2024")
+multiShop.Maker(500, "micro", "Accessories", "https://i.pinimg.com/236x/69/16/10/691610ae11281d5f932da1f537e19d01.jpg", "available from: 15/01/2024")
+multiShop.Maker(340, "samsung", "Phones", "https://i.pinimg.com/236x/14/04/71/1404719207b4d0e57e256a6c2b085521.jpg", "available from: 15/01/2024")
+multiShop.Maker(1500, "nintendo", "Gaming", "https://i.pinimg.com/236x/65/68/d4/6568d4f940af208209ecdd0419d2ed0a.jpg", "available from: 15/01/2024")
+multiShop.Maker(1400, "xbox", "Gaming", "https://i.pinimg.com/236x/cd/ef/37/cdef37d49df388a45bb1137297b087e0.jpg", "available from: 15/01/2024")
+multiShop.Maker(1000, "ps4", "Gaming", "https://i.pinimg.com/236x/1a/59/12/1a59123abcd0636068c5ab3bc3d868f5.jpg", "available from: 15/01/2024")
+multiShop.Maker(500, "samsung note", "Phones", "https://i.pinimg.com/236x/84/61/3d/84613da06950cba6089c83936421562c.jpg", "available from: 15/01/2024")
+multiShop.Maker(1500, "console", "Accessories", "https://i.pinimg.com/236x/05/68/6d/05686d7802e806066e824d03ca76136d.jpg", "available from: 15/01/2024")
+multiShop.Maker(450, "gaming table", "Gaming", "https://i.pinimg.com/236x/ba/c4/07/bac407ac0f6b23a9e4c1c16fba14726c.jpg", "available from: 15/01/2024")
+multiShop.Maker(500, "imei", "Phones", "https://i.pinimg.com/236x/2b/14/be/2b14bec38992888269ff2716a5f31d1a.jpg", "available from: 15/01/2024")
+multiShop.Maker(1000, "gaming pc", "Gaming", "https://i.pinimg.com/236x/3c/01/0d/3c010df11c2a709560c7cf33e9457275.jpg", "available from: 15/01/2024")
+multiShop.Maker(800, "rtx 4090", "Gaming", "https://i.pinimg.com/236x/12/ee/30/12ee303b4b1794aa55218410e146986f.jpg", "available from: 15/01/2024")
 
 
 
 function display(item) {
-    console.log(item)
+    // console.log(item)
     var id = item.id;
     $("#shop").append(`
         <div class="post container" id="addto">
@@ -72,8 +73,9 @@ function display(item) {
         <img class = "post-img" src=${item.images} >
         <h2 class="category">${item.category}</h2>
         <a href="post-page.html" class="post-title"></a>
+        <span class="post-date">${item.date}</span>
         <p class="post-description">${item.price}</p>
-        <button onclick="addToCart()" class = "add">Addtocart </button>
+        <button class = "add">Addtocart </button>
         </div>
         `);
 }
@@ -103,10 +105,12 @@ $(".image").click(function () {
 });
 
 
-$("select").on("change", function () {
+$("#options").on("change", function () {
     var value = $(this).val();
-    console.log(value);
+    console.log(5);
+   
     var filtered = multiShop.list.filter(function (item) {
+        console.log(8);
         return item.category === value;
     });
     $("#shop").empty();
@@ -115,23 +119,19 @@ $("select").on("change", function () {
     });
 });
 
-// $('.message').hide()
-// $('.take').click(function () {
-//     $('.message').show()
-//     $('#shop').hide()
-//     $('.hided').hide()
-// })
 
 
 $("#cts").on("click", function () {
-    var value = $("#search").val();
-    console.log(value);
+    var value = $("#shopp").val();
+    console.log(2);
     var filtered = multiShop.list.filter(function (item) {
         return item.name.toLowerCase().includes(value.toLowerCase());
     });
     $("#shop").empty();
+
     filtered.forEach(function (item) {
         display(item);
     });
 });
+
 
