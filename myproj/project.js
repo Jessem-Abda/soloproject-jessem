@@ -64,7 +64,7 @@ multiShop.Maker(800, "rtx 4090", "Gaming", "https://i.pinimg.com/236x/12/ee/30/1
 
 
 function display(item) {
-    // console.log(item)
+    // console.log(9)
     var id = item.id;
     $("#shop").append(`
         <div class="post container" id="addto">
@@ -109,16 +109,29 @@ $("#options").on("change", function () {
     var value = $(this).val();
     console.log(5);
    
-    var filtered = multiShop.list.filter(function (item) {
-        console.log(8);
-        return item.category === value;
+    var filtered = multiShop.list.filter(function (items) {
+       
+        return items.category === value;
     });
     $("#shop").empty();
-    filtered.forEach(function (item) {
-        display(item);
+    console.log(8);
+    filtered.forEach(function (items) {
+        display(items);
+        console.log(3);
     });
 });
-
+document.getElementById('options').addEventListener('change', function() {
+    const selectedOption = this.value; 
+    const items = document.querySelectorAll('.item'); 
+  
+    items.forEach(item , function(){
+      if (selectedOption === 'all' || item.dataset.category === selectedOption) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none'; 
+      }
+    });
+  });
 
 
 $("#cts").on("click", function () {

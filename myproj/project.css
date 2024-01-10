@@ -86,10 +86,7 @@ header.shadow.logo {
     align-items: center;
 }
 
-/* .home-text{
-    color: var(--bg-color);
-    text-align: center;
-} */
+
 .home-title {
     font-size: 3.5rem;
     color: var(--second-color);
@@ -149,6 +146,7 @@ header.shadow.logo {
 .post-img {
     width: 200px;
     height: 250px;
+    
 }
 
 .category {
@@ -168,14 +166,6 @@ header.shadow.logo {
     overflow: hidden;
 }
 
-
-.post-date {
-    display: flex;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 4px;
-}
 
 .post-description {
     font-size: 0.9rem;
@@ -207,51 +197,15 @@ header.shadow.logo {
     font-weight: 500;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
-    
-}
-
-.footer p {
-    font-size: 0.938;
-}
-
-.social {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-}
-
-.social .bx {
-    font-size: 1.4rem;
-    color: var(--text-color);
-}
-
-.social .bx:hover {
-    color: var(--second-color);
-    transition: 0.3 all linear;
-}
-
-.post-header {
-    max-width: 800px;
-    margin: auto;
-    width: 100%;
-}
 
 .header-content {
-    /* display: flex; */
+    
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem !important;
+    margin-top: 4rem ;
 }
 
-.back-home {
-    color: var(--second-color);
-    font-size: 0.9rem;
-}
+
 
 .header-title {
     width: 90%;
@@ -288,21 +242,10 @@ center
 #shop {
     height: 2000px;
     display: inline-block;
-    
     justify-content: space-around;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
-.share {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-}
-
-.share-title {
-    font-size: 1.1rem;
-}
 
 .footer {
     height: 50px;
@@ -329,42 +272,6 @@ center
     background: var(--best-color);
 }
 
-.footer .cts {
-    background-color: var(--best-color);
-}
-
-#scrollToTopButton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: var(--second-color);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    border-radius: 70px;
-    border-color: var(--best-color);
-    cursor: pointer;
-
-}
-
-#scrollToTopButton:hover {
-    background-color: cyan;
-}
-
-#scrollToTopButton {
-    box-shadow: 0 0 5px cyan,
-        0 0 25px cyan;
-
-}
-
-#scrollToUpButton:hover {
-    box-shadow: 0 0 5px cyan 0 0 25px cyan, 0 0 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan;
-}
-
 #contact {
     position: fixed;
     bottom: 20px;
@@ -373,16 +280,12 @@ center
     font-size: 16px;
     background-color: var(--second-color);
     color: var(--best-color);
-    border: none;
     border-radius: 50px;
     cursor: pointer;
 
 }
 
-#contact {
-    box-shadow: 0 0 5px cyan,
-        0 0 25px cyan;
-}
+
 
 #contact:hover {
     background-color: cyan;
@@ -401,17 +304,13 @@ center
 }
 
 #haha {
-    border-radius: 50px;
+    border-radius: 500px;
     color: black;
     border-color: var(--best-color);
     background-color: var(--best-color);
     width: 800px;
 }
 
-#pp {
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 #jh {
     position: absolute;
@@ -432,25 +331,6 @@ center
     cursor: pointer;
 }
 
-.rent {
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 3px;
-    padding: 12px 24px;
-    border: 0;
-    color: #fff;
-    background: #fdbac7;
-    line-height: 1.15;
-    font-size: 16px;
-}
-
- /* .rent   :hover {
-        transition: all .1s ease;
-        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
-    }
-} */
 
 .message {
     background-color: var(--second-color);
@@ -491,7 +371,7 @@ header {
     background-image: url(/pics/menu.gif);
     cursor: pointer;
 } */
-#ahle:hover{
+#ahla:hover{
     cursor: pointer;
 }
 
@@ -501,10 +381,7 @@ header {
     border-color: var(--best-color);
 
 }
-/* #animated{
-    width: 1000px;
-    height: 100px;
-} */
+
 #addto{
     display: inline-table;
     margin-left: 100px;
@@ -515,87 +392,16 @@ header {
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s
-}
 
-/* Modal Content */
-.modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fefefe;
-  width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s
-}
 
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
-}
 .add{
     border-radius: 100px;
     background-color: var(--best-color);
     border-color: var(--best-color);
 }
+.item {
+    display: block; 
+  }
+  
